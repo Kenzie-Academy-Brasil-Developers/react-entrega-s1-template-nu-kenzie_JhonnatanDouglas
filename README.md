@@ -1,5 +1,3 @@
-# react-entrega-s1-template-nu-kenzie_JhonnatanDouglas
-
 # 🏁 Entrega: Nu Kenzie
 
 ### :date: **Período do Projeto:** Módulo 3 - Semana 2
