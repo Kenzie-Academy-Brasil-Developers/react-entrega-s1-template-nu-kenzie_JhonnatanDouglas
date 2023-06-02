@@ -1,14 +1,26 @@
-import { Paragraph, TittleH3 } from '../../styles/typography'
-import { DivValueArea } from './style'
+import { StyledParagraph, StyledH3 } from '../../styles/typography'
+import { StyledTotalValueDiv } from './style'
 
-export const TotalValue = () => {
+export const TotalValue = ({ summaryList }) => {
+  const totalMoney = summaryList.reduce((accValue, summary) => {
+    return summary.typeValue === 'Entrada'
+      ? accValue + Number(summary.money)
+      : accValue - Number(summary.money)
+  }, 0)
+
+  const formattedTotalMoney = totalMoney.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  })
+
   return (
-    <DivValueArea>
+    <StyledTotalValueDiv>
       <div>
-        <TittleH3>Valor Total</TittleH3>
-        <Paragraph>O valor se refere ao saldo</Paragraph>
+        <StyledH3>Valor Total</StyledH3>
+        <StyledParagraph>O valor se refere ao saldo</StyledParagraph>
       </div>
-      <TittleH3>R$ 8184,00</TittleH3>
-    </DivValueArea>
+
+      <StyledH3>{formattedTotalMoney}</StyledH3>
+    </StyledTotalValueDiv>
   )
 }

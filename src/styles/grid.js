@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const DivHeaderContainer = styled.div`
+export const StyledResponsiveDivHeader = styled.div`
   margin: 0 auto;
   padding: 1rem;
   width: 100%;
   max-width: 64rem;
 `
 
-export const DivMainContainer = styled.div`
+export const StyledResponsiveDivMain = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

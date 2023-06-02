@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SalaryCard = styled.li`
+export const StyledCardLi = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;

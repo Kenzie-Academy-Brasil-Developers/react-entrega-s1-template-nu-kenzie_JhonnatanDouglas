@@ -1,28 +1,31 @@
+import { useState } from 'react'
 import { InsertCard } from './components/Form'
-import { StyledHeader } from './components/Header'
-import { SumaryArea } from './components/SummaryArea'
+import { HeaderDefault } from './components/Header'
+import { SumaryArea } from './components/SummaryTotalValue'
 import { TotalValue } from './components/TotalValue'
 import { GlobalStyles } from './styles/globalStyles'
-import { DivMainContainer } from './styles/grid'
+import { StyledResponsiveDivMain } from './styles/grid'
 import { ResetCss } from './styles/reset'
 
 function App() {
+  const [summary, setSummaryList] = useState([])
+
   return (
     <>
       <ResetCss />
       <GlobalStyles />
 
-      <StyledHeader />
+      <HeaderDefault />
       <main>
-        <DivMainContainer>
+        <StyledResponsiveDivMain>
           <div>
-            <InsertCard />
-            <TotalValue />
+            <InsertCard setSummaryList={setSummaryList} />
+            <TotalValue summaryList={summary} />
           </div>
           <div>
-            <SumaryArea />
+            <SumaryArea summaryList={summary} setSummaryList={setSummaryList} />
           </div>
-        </DivMainContainer>
+        </StyledResponsiveDivMain>
       </main>
     </>
   )

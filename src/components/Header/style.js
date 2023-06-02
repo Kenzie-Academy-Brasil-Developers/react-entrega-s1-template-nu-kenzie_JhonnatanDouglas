@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Header = styled.header`
+export const StyledHeader = styled.header`
   width: 100%;
   height: 5.625rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.125rem 1.25rem 0rem;

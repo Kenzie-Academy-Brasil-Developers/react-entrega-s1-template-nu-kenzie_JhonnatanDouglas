@@ -1,14 +1,14 @@
-import { DivHeaderContainer } from '../../styles/grid'
-import { Header } from './style'
+import { StyledResponsiveDivHeader } from '../../styles/grid'
+import { StyledHeader } from './style'
 
-export const StyledHeader = () => {
+export const HeaderDefault = () => {
   return (
-    <Header>
-      <DivHeaderContainer>
+    <StyledHeader>
+      <StyledResponsiveDivHeader>
         <figure>
           <img src='./src/assets/Nu-Kenzie-logo.svg' alt='Logo da Nu Kenzie' />
         </figure>
-      </DivHeaderContainer>
-    </Header>
+      </StyledResponsiveDivHeader>
+    </StyledHeader>
   )
 }

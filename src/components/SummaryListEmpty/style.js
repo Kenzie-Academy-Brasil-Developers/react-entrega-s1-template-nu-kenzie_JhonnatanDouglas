@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const DivEmptyValue = styled.div`
+export const StyledEmptyValueDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
