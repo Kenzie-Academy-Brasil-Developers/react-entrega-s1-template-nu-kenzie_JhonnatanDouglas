@@ -19,7 +19,6 @@ export const TotalValue = ({ summaryList }) => {
         <StyledH3>Valor Total</StyledH3>
         <StyledParagraph>O valor se refere ao saldo</StyledParagraph>
       </div>
-
       <StyledH3>{formattedTotalMoney}</StyledH3>
     </StyledTotalValueDiv>
   )
