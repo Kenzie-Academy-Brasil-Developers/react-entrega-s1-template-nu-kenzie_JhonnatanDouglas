@@ -2,6 +2,7 @@
 
 ### :date: **Período do Projeto:** Módulo 3 - Semana 2
 ### :iphone: **Mobile First =** True
+#### :computer: Acesse o projeto em funcionamento: [CLIQUE AQUI](https://nu-kenzie-plum-seven.vercel.app/) 
 
 
 ##### **Descrição:** Este desenvolvimento foi feito com o React. A aplicação adiciona e remove entradas e despesas, de acordo com o que o usuário seleciona. Também lhe informa o valor total disponível.
